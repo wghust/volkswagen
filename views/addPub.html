@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css">
+
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="navbar-coolapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="./index.html"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;参考案例</a>
+					</li>
+					<li>
+						<a href="./addCase.html"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;添加案例</a>
+					</li>
+					<li>
+						<a href="./addPub.html"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;舆情特报</a>
+					</li>
+					<li>
+						<a href="./chart.html"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;图表统计</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="w_con">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-9">
+					<div class="col-xs-12 right_block">
+						<div class="right_block_top">
+							<span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;舆情特报
+						</div>
+						<div class="right_block_con">
+							<div class="case_block" style="padding:20px">
+								<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">关键词:</label>
+										<div class="col-xs-6">
+											<input type="text"  class="form-control input-sm" id="h_key">
+										</div>
+										<div class="col-xs-2">
+											<input type="button" class="btn btn-primary input-sm h_flash" value="刷新">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">文本标题:</label>
+										<div class="col-xs-6">
+											<input type="text"  class="form-control input-sm" id="h_title">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">单位:</label>
+										<div class="col-xs-6">
+											<input type="text"  class="form-control input-sm" id="h_pub">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">当前舆情:</label>
+										<div class="col-xs-8">
+											<textarea class="form-control h_dqyq" rows="3"></textarea>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">舆情内容:</label>
+										<div class="col-xs-8">
+											<table class="table table-bordered h_ydtable" style="margin-top:10px">
+												<thead>
+													<tr>
+														<td>序号</td>
+														<td>选择</td>
+														<td>操作要点</td>
+													</tr>
+												</thead>
+												<tbody>
+													
+													<tr>
+														<td>1</td>
+														<td>
+															<input type="checkbox" value="1">
+														</td>
+														<td>
+															当记者出现在营业厅服务前台（说明或显露出身份时），应按照营业厅窗口服务规范予以接待，礼貌得体，不卑不亢。
+														</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>
+															<input type="checkbox" value="2">
+														</td>
+														<td>
+															对记者的问题或要求，应按照对一般用户的口径予以答复。但应问清记者的姓名与所属媒体。对比较大的媒体（如电视台等），还应问清具体的频道和栏目。
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">处理方案：</label>
+										<div class="col-xs-8 new_clfa_list">
+											<div class="input-group new_clfa">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<div class="input-group new_clfa">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<div class="input-group new_clfa">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<div class="input-group new_clfa">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<input type="button" class="btn btn-primary input-sm h_addclfa" value="添加新处理">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="" class="col-xs-2 control-label">参考案例：</label>
+										<div class="col-xs-8 new_ckal_list">
+											<table class="table table-bordered h_cktable" style="margin-top:10px">
+												<thead>
+													<tr>
+														<td>序号</td>
+														<td>选择</td>
+														<td>操作要点</td>
+													</tr>
+												</thead>
+												<tbody>
+													
+													<tr>
+														<td>1</td>
+														<td>
+															<input type="checkbox" value="1">
+														</td>
+														<td>
+															当记者出现在营业厅服务前台（说明或显露出身份时），应按照营业厅窗口服务规范予以接待，礼貌得体，不卑不亢。
+														</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>
+															<input type="checkbox" value="2">
+														</td>
+														<td>
+															对记者的问题或要求，应按照对一般用户的口径予以答复。但应问清记者的姓名与所属媒体。对比较大的媒体（如电视台等），还应问清具体的频道和栏目。
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="input-group new_ckal">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<div class="input-group new_ckal">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<div class="input-group new_ckal">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<div class="input-group new_ckal">
+												<input type="text" class="form-control input-sm">
+												<div class="input-group-addon">
+													<span class="glyphicon glyphicon-remove"></span>
+												</div>
+											</div>
+											<label class="checkbox-inline h_fjckal">
+												<input type="checkbox" value="0">附件参考案例
+											</label>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<!-- <label for="" class="col-xs-2 control-label"></label> -->
+										<div class="col-xs-2 col-xs-offset-2">
+											<input type="button" class="btn btn-primary input-sm h_save" value="保存">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="col-xs-11 left_block">
+						<div class="left_block_top">
+							<span class="glyphicon glyphicon-link"></span>&nbsp;&nbsp;相关典型案例
+						</div>
+						<div class="left_block_con">
+							<ul class="page_select_ul">
+								<li>
+									<a href=""><span class="glyphicon glyphicon-share-alt"></span>&nbsp;&nbsp;2013-03-20区县公司关于温州公共民生频道《天天讲闲谈》</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-share-alt"></span>&nbsp;&nbsp;播出文成下沙村 欠费停电的舆情处理案例</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-share-alt"></span>&nbsp;&nbsp;2013-04-17工区关于市府路沿线各大路口信号灯全部停电的舆情处理案例</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-share-alt"></span>&nbsp;&nbsp;2013-05-29工区关于温州都市报《市区多条电力线路昨日检修，让许多人措手不及》的舆情处理案例</a>
+								</li>
+								<li>
+									<a href=""><span class="glyphicon glyphicon-share-alt"></span>&nbsp;&nbsp;2013-06-18区县公司关于关于国家新闻网报道洞头有序用电的舆情处理案例。</a>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- javascript -->
+<script type="text/javascript" src="../public/js/lib/jquery-1.9.1.min.js"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../public/js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="../public/js/lib/mustache.js"></script>
+<script type="text/javascript" src="../public/js/lib/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../public/js/lib/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+</html>
